@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Layout Derives from Text Setting</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
+  <link rel="stylesheet" href="screen.css" />
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700&display=swap&subset=latin-ext" rel="stylesheet">
+</head>
+<body>
+
+  <h1>Layout Derives from Text Setting</h1>
+
+  <h2>Set Your Text to a Comfortable Measure</h2>
+
+  <p>
+    According to Robert Bringhurst in his book <cite>The Elements of Typographic Style</cite>:
+  </p>
+
+  <blockquote>
+    <p>
+      Anything from 45 to 75 characters is widely regarded as a satisfactory length of line for a
+      single-column page set in a serifed text face in a text size. The 66-character line (counting
+      both letters and spaces) is widely regarded as ideal. For multiple-column work, a better
+      average is 40 to 50 characters (p. 26).
+    </p>
+  </blockquote>
+
+  <h3>From 45 to 75 Characters</h3>
+  <p>
+    This is a line of text that is 45 characters. This: 55; here: 65. On to 75.
+    This line, too, perfectly fits 45 characters. And it continues on until 75.
+  </p>
+
+  <h3>The Ideal Length: 66 Characters</h3>
+  <p>
+    And here is a line that reaches the ideal length of 66 characters.
+    Another line following also reaches exactly all the way out to 66.
+    Remember, all browsers collapse any whitespace in the HTML source.
+  </p>
+
+  <h3>Multi-column Line Lengths</h3>
+  <p>
+    Multi-column lines should strive for 40. Maybe 50.
+    The goal: keep your readers comfortable. Be fussy.
+    A grid’s adjacent columns produces such a setting;
+    the same is true for CSS’s multi-columns property,
+    which allows text to flow across multiple columns.
+    (Grid constrains text to a single column and row.)
+  </p>
+
+  <h3>Some Important Caveats</h3>
+  <p>
+    Note that spaces are included in those lines. We call the length of a page’s lines of text its
+    <em>measure</em>. Generally speaking, the longer the lines of text—that is, the greater their
+    measure—the more generously we should apply line-height, also known as <em>leading</em>.
+  </p>
+
+  <h3>Discover Your Media Queries</h3>
+  <p>
+    When building a responsive design, always start from the smallest possible viewport that you can
+    display. As you pull the viewport open, using something like the Responsive Design Mode in
+    Firefox, you will begin to see places where your page layout and its elements begin to exhibit
+    signs of stress: lines of text get too long to read comfortably. Images occupy too much space.
+    The page loses its hierarchy and readers’ eyes are no longer properly guided through the content
+    of the page.
+  </p>
+  <p>
+    It’s at those signs of stress that you need to make an adjustment to your typesetting, by
+    increasing the size of the text, or to your layout: either by dropping in a
+    <code>min-width</code> media query expressed in ems, or by cleverly specifying a CSS Grid that
+    handles larger screens and additional space for your layout.
+  </p>
+
+  <h3>Set Your Text First</h3>
+  <p>
+    All of this advice depends on carefully set text. Again, mobile-first design is your best
+    friend: get your typefaces chosen and set in a simple, single column (which is all there's
+    really room for in the smallest mobile-scale views). You want your text size to be well
+    established before braving the world of larger viewports, media queries, grid layout, and so on.
+  </p>
+
+  <h2>Essential References</h2>
+
+  <h3>CSS Flexible Boxes (aka Flexbox)</h3>
+  <ul class="references">
+    <li>
+      <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">
+        <h4>CSS Tricks</h4>
+        <p>A Complete Guide to Flexbox</p>
+      </a>
+    </li>
+    <li>
+      <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox">
+        <h4>Mozilla Developer Network</h4>
+        <p>Learn web development: Flexbox</p>
+      </a>
+    </li>
+    <li>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout">
+        <h4>Mozilla Developer Network</h4>
+        <p>Web technology for developers: CSS Flexible Box Layout</p>
+      </a>
+    </li>
+    <li>
+      <a href="https://flexboxfroggy.com/">
+        <h4>Flexbox Froggy</h4>
+        <p>A game for learning CSS flexbox</p>
+      </a>
+    </li>
+  </ul>
+
+  <h3>CSS Grid</h3>
+  <ul class="references">
+    <li>
+      <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">
+        <h4>CSS Tricks</h4>
+        <p>A Complete Guide to Grid</p>
+      </a>
+    </li>
+    <li>
+      <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids">
+        <h4>Mozilla Developer Network</h4>
+        <p>Learn web development: Grids</p>
+      </a>
+    </li>
+    <li>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout">
+        <h4>Mozilla Developer Network</h4>
+        <p>Web technology for developers: CSS Grid Layout</p>
+      </a>
+    </li>
+    <li>
+      <a href="https://codepip.com/games/grid-garden/">
+        <h4>Grid Garden</h4>
+        <p>A game for learning CSS grid (requires a free login)</p>
+      </a>
+    </li>
+  </ul>
+
+  <small>Site content and design © Karl Stolley.</small>
+
+</body>
+</html>
