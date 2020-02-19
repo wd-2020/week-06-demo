@@ -105,6 +105,9 @@ cite,em,i {
   - mix of super-simple properties and old-school
     syntax with newer CSS
 */
+.references {
+  list-style-type: none;
+}
 .references a {
   display: block;
 }
