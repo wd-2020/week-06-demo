@@ -132,6 +132,16 @@ cite,em,i {
   }
 }
 
+@media screen and (min-width: 820px) {
+  body {
+    display: grid;
+    grid-template-columns: 5fr 4fr; /* Modular scale! */
+  }
+  #header,
+  #footer {
+    grid-column: 1 / 3;
+  }
+}
 
 
 /* Show Gridlines... */
