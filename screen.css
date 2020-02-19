@@ -10,6 +10,15 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 *  https://www.modularscale.com/?18&px&1.25
 */
 
+/* Base Styles */
+/* These tend to be:
+  - element selectors
+  - aimed at typography and color
+  - essential to the display of the page
+  - super-simple properties and old-school
+    syntax
+*/
+
 html {
   font-family: "Fira Sans", Helvetica, Arial, sans-serif;
   font-size: 1.125em; /* 18px / 16px = 1.125em */
@@ -79,13 +88,38 @@ cite,em,i {
   font-style: italic;
 }
 
+/* Layout */
+/* These tend to be:
+  - ID selectors, especially for CSS Grid
+  - Possibly also class selectors, especially for flexbox
+  - Mix of old-school approaches to layout, ehanced by
+    newer CSS layout techniques
+*/
 
+
+/* Modular Styles */
+/* These tend to be:
+  - class selectors or compound/descendant selectors
+  - aimed at special typography, color, or presentation
+  - added enhancements to the display of the page
+  - mix of super-simple properties and old-school
+    syntax with newer CSS
+*/
 .references a {
   display: block;
 }
 .references p {
   padding-bottom: 0;
 }
+
+/* State Styles */
+/* These tend to be:
+  - Base, Layout, and Modular selectors inside of media queries
+  - Based on screen size or the presence of JavaScript
+  - Added enhancements to the display of the page
+  - Mix of super-simple properties and old-school
+    syntax with newer CSS
+*/
 
 
 
