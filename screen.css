@@ -137,7 +137,8 @@ cite,em,i {
   - Mix of super-simple properties and old-school
     syntax with newer CSS
 */
-@media screen and (min-width: 320px) {
+/* 320px || 320 / 16 = 20em */
+@media screen and (min-width: 20em) {
   .references {
     display: flex;
     flex-wrap: wrap;
@@ -151,19 +152,22 @@ cite,em,i {
   }
 }
 
-@media screen and (min-width: 620px) {
+/* 620px || 620 / 16 = 38.75em */
+@media screen and (min-width: 38.75em) {
   html {
     font-size: 1.25em; /* 20 / 16 = 1.25 */
   }
 }
 
-@media screen and (min-width: 710px) {
+/* 710px || 710 / 16 = 44.375em */
+@media screen and (min-width: 44.375em) {
   html {
     padding: 1.2222222222em 11.11111111%; /* 80 / 720 = 0.1111111111 */
   }
 }
 
-@media screen and (min-width: 820px) {
+/* 820 || 820 / 16 = 51.25em */
+@media screen and (min-width: 51.25em) {
   body {
     display: grid;
     grid-column-gap: 1.2222222222em;
