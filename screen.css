@@ -138,6 +138,7 @@ cite,em,i {
 @media screen and (min-width: 820px) {
   body {
     display: grid;
+    grid-column-gap: 1.2222222222em;
     grid-template-columns: 5fr 4fr; /* Modular scale! */
   }
   #header,
