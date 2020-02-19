@@ -120,6 +120,17 @@ cite,em,i {
   - Mix of super-simple properties and old-school
     syntax with newer CSS
 */
+@media screen and (min-width: 620px) {
+  html {
+    font-size: 1.25em; /* 20 / 16 = 1.25 */
+  }
+}
+
+@media screen and (min-width: 710px) {
+  html {
+    padding: 1.2222222222em 11.11111111%; /* 80 / 720 = 0.1111111111 */
+  }
+}
 
 
 
