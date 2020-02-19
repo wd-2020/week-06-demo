@@ -108,10 +108,24 @@ cite,em,i {
 .references {
   list-style-type: none;
 }
+.references li {
+  background: #d9c0c1;
+  border: 1px solid #700;
+  border-radius: 0.3055555556em; /* 5.5 / 18 = 0.3055555556 */
+  padding: 0;
+  margin-bottom: 0.6111111111em;
+}
 .references a {
+  color: #700;
   display: block;
+  text-decoration: none;
+  padding: 0.6111111111em;
+}
+.references h4 {
+  font-weight: bold;
 }
 .references p {
+  font-size: 0.8em; /* 14.4 / 18 = 0.8em */
   padding-bottom: 0;
 }
 
